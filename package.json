@@ -1,0 +1,42 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "@editorjs/attaches": "^1.0.1",
+        "@editorjs/checklist": "^1.1.0",
+        "@editorjs/delimiter": "^1.1.0",
+        "@editorjs/editorjs": "^2.17.0",
+        "@editorjs/embed": "^2.2.1",
+        "@editorjs/header": "^2.4.1",
+        "@editorjs/image": "^2.3.3",
+        "@editorjs/inline-code": "^1.3.1",
+        "@editorjs/list": "^1.4.0",
+        "@editorjs/marker": "^1.2.2",
+        "@editorjs/paragraph": "^2.6.1",
+        "@editorjs/quote": "^2.3.0",
+        "@editorjs/warning": "^1.1.1",
+        "axios": "^0.19.2",
+        "bootstrap": "^4.0.0",
+        "cross-env": "^7.0",
+        "jquery": "^3.2",
+        "laravel-mix": "^5.0.1",
+        "lodash": "^4.17.13",
+        "popper.js": "^1.12",
+        "resolve-url-loader": "^2.3.1",
+        "sass": "^1.20.1",
+        "sass-loader": "^8.0.0",
+        "vue": "^2.5.17",
+        "vue-template-compiler": "^2.6.10"
+    },
+    "dependencies": {
+        "vue-editor-js": "^1.1.1"
+    }
+}
