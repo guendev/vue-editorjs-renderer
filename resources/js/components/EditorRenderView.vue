@@ -174,7 +174,7 @@
         }
     }
     .image-tool {
-        &:not(.image-tool--withBackground) {
+        &:not(.image-tool--stretched) {
             .image-tool__image {
                 width: fit-content;
             }
