@@ -15,6 +15,8 @@
 
                <!-- Paragraph -->
                <div v-if="block.type === 'paragraph'" class="ce-paragraph cdx-block" v-html="block.data.text"></div>
+
+
                <!-- List -->
                <ul
                    v-if="block.type === 'list'"
@@ -23,6 +25,9 @@
                >
                    <li class="cdx-list__item" v-html="item" v-for="item in block.data.items"></li>
                </ul>
+
+
+
                <!-- Delimiter -->
                <div class="ce-delimiter cdx-block" v-if="block.type === 'delimiter' "></div>
 
